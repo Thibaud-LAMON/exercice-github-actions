@@ -1,0 +1,15 @@
+name: Demo
+# nom de l'action
+on: workflow_dispatch
+# on = sur quel événement déclencher l'action
+# déclenche l'action manuellement
+jobs:
+  # liste des jobs (actions) à exécuter
+  first-job:
+    runs-on: ubuntu-latest
+    # système d'exploitation sur lequel l'action est exécutée
+    steps:
+      - name: Run a one-line script
+        # nom de l'étape
+        run: echo Hello, world!
+        # commande à exécuter

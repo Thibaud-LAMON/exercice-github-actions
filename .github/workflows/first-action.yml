@@ -11,5 +11,6 @@ jobs:
     steps:
       - name: Run a one-line script
         # nom de l'étape
-        run: echo Hello, world!
-        # commande à exécuter
+        run: | # commande à exécuter
+          echo Hello, world!
+          echo This job was triggered by the workflow_dispatch event.
